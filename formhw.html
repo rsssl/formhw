@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(241, 241, 241);
+        }
+        div{
+            margin-left: 650px;
+            margin-top: 70px;
+        }
+        h1{
+            size: 100px;
+            margin-left: 650px;
+        }
+    </style>
+</head>
+<body>
+    <h1><i>Register Form</i></h1>
+
+    <div>
+        <form id="register-form" action="form.php" method="get" enctype="multipart/form-data">
+            <label for="name">Name</label><br>
+            <input type="text" name="name"  placeholder="Enter Name" minlength="3" required>
+            <br><br>
+
+            <label for="surname">Surname</label><br>
+            <input type="text"  id="surname" placeholder="Enter Surname" minlength="3" required>
+            <br><br>
+
+            <label for="age">Age</label><br>
+            <input id="age" type="number" name="age" min="3" max="99" required>
+            <br><br>
+
+            <label for="email">Email</label><br>
+            <input id="email" type="email" name="email" required>
+            <br><br>
+
+            <label for="password">Password</label><br>
+            <input id="password" type="password" name="password"  minlength="7" required>
+            <br><br>
+
+            <label  for="male">Male</label>
+            <input id="male" name="cins" type="radio">
+            <label  for="female">Female</label>
+            <input id="female" name="cins" type="radio">
+            <br><br>
+
+            <label for="photo">Photo</label><br>
+            <input type="file" name="" id="photo" accept=".jpg .jpeg" multiple>
+            <br><br>
+
+            <label for="cv">CV</label><br>
+            <input type="file" name="cv" id="cv" accept=".pdf" multiple>
+            <br><br>
+
+            <label for="okey">Accept all cookies</label>
+            <input id="okey" type="checkbox" required>
+        </form>
+
+        <br><br>
+        <button type="submit" form="register-form">Submit</button>
+        <button type="reset" form="register-form">Reset</button>
+
+</div>
+    
+</body>
+</html>
